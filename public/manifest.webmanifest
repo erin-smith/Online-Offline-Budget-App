@@ -1,0 +1,22 @@
+{
+  "name": "budget-app",
+  "short_name": "budget",
+  "icons": [
+    {
+      "src": "icons/pig.png",
+      "sizes": "600x600",
+      "type": "image/png"
+    },
+  
+    {
+      "src": "icons/money.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Awesome application that will help you achieve your dreams."
+}
