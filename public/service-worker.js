@@ -1,6 +1,6 @@
 console.log("Hi from your service-worker.js file!");
 
-const FILES_TO_CACHE = [ "/", "/index.html", "index.js", "manifest.webmanifest", "icons/money.jpg", "icons/pig.png", "db.js"];
+const FILES_TO_CACHE = [ "/", "/index.html", "index.js", "/manifest.webmanifest", "icons/money.jpg", "icons/pig.png", "db.js"];
 
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
