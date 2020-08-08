@@ -142,10 +142,6 @@ function sendTransaction(isAdding) {
     });
 }
 
-function clearAll() {
-  const acctChart = document.getElementById("mychart");
-  acctChart.innerHTML = "";
-};
 
 document.querySelector("#add-btn").onclick = function () {
   sendTransaction(true);
@@ -155,22 +151,3 @@ document.querySelector("#sub-btn").onclick = function () {
   sendTransaction(false);
 };
 
-document.querySelector("#del-btn").onclick = function (e) {
-if (e.target.matches("#clear-all")) {
-  element = e.target;
-  data_id = element.getAttribute("data-id");
-  fetch("/clearall", {
-      method: "delete"
-    })
-    .then(function (response) {
-      if (response.status !== 200) {
-        console.log("Looks like there was a problem. Status Code: " + response.status);
-        return;
-      }
-      clearAll();
-    })
-    .catch(function (err) {
-      console.log("Fetch Error :-S", err);
-    });
-}
-};
